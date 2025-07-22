@@ -50,11 +50,11 @@ def preprocess_image(image):
 
 @st.cache_resource
 def load_model_components():
-    with open('trained_models\MLP_Classifier_(Neural_Network)_best_model.pkl', 'rb') as f:
+    with open('trained_models/MLP_Classifier_(Neural_Network)_best_model.pkl', 'rb') as f:
         model = pickle.load(f)
-    with open('trained_models\svd_transformer.pkl', 'rb') as f:
+    with open('trained_models/svd_transformer.pkl', 'rb') as f:
         svd = pickle.load(f)
-    with open('trained_models\label_encoder.pkl', 'rb') as f:
+    with open('trained_models/label_encoder.pkl', 'rb') as f:
         label_encoder = pickle.load(f)
     return model, svd, label_encoder
 
