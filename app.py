@@ -50,7 +50,7 @@ def preprocess_image(image):
 
 @st.cache_resource
 def load_model_components():
-    with open('trained_models\K-Nearest_Neighbors_best_model.pkl', 'rb') as f:
+    with open('trained_models/K-Nearest_Neighbors_best_model.pkl', 'rb') as f:
         model = pickle.load(f)
     with open('trained_models/svd_transformer.pkl', 'rb') as f:
         svd = pickle.load(f)
